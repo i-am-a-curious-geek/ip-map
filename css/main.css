@@ -1,0 +1,12 @@
+body {
+    padding-top:25px;
+}
+
+#map {
+    height:50vh;
+    width:50vw;
+}
+
+.leaflet-control-attribution.leaflet-control {
+    display:none;
+} 
