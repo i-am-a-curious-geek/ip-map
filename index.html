@@ -46,14 +46,14 @@
                     if (map != null) {
                         map.remove();
                     }
-                    osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         maxZoom: 19
                     });
 
                     var ipAddress = $("#ipAddress").val();
 
                     $.ajax({
-                        url: "http://ipinfo.io/" + ipAddress,
+                        url: "https://ipinfo.io/" + ipAddress,
                         type: "get",
                         dataType: "jsonp",
                         /*
